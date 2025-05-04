@@ -1,0 +1,119 @@
+/* Container Styling */
+.min-h-screen {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9; /* Light gray background */
+  }
+  
+  /* Card Styling */
+  .bg-white {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 32px;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  /* Title and Subtitle */
+  .text-3xl {
+    font-size: 1.875rem; /* 30px */
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  
+  .text-gray-600 {
+    color: #6b7280; /* Gray text */
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  
+  /* Input Fields */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    border: 1px solid #d1d5db; /* Light gray border */
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    outline: none;
+    border-color: #6c63ff; /* Purple border on focus */
+    box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.2); /* Purple focus ring */
+  }
+  
+  /* Buttons */
+  button {
+    padding: 12px 16px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button[type="button"] {
+    border: 1px solid #d1d5db; /* Light gray border */
+    background-color: #ffffff;
+    color: #6b7280; /* Gray text */
+  }
+  
+  button[type="button"]:hover {
+    background-color: #f3f4f6; /* Light hover effect */
+  }
+  
+  button[type="submit"] {
+    background-color: #6c63ff; /* Purple button */
+    color: #ffffff;
+    border: none;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #5a54d6; /* Darker purple on hover */
+  }
+  
+  /* Links */
+  a {
+    color: #6c63ff; /* Purple link */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Form Layout */
+  .grid {
+    display: grid;
+    gap: 16px;
+  }
+  
+  .grid-cols-1 {
+    grid-template-columns: 1fr;
+  }
+  
+  .md\\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+  
+  .md\\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+  
+  /* Footer Text */
+  .text-sm {
+    font-size: 0.875rem; /* Small text */
+    text-align: center;
+    margin-top: 16px;
+  }

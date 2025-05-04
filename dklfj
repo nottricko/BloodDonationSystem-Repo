@@ -1,0 +1,19 @@
+[33mcommit 4bf1d6afa0e22aefb7a02462f603d894c8284be8[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdioquino-branch[m[33m, [m[1;31morigin/dioquino-branch[m[33m)[m
+Author: John Lawrence Dioquino <159016024+Penguinqt@users.noreply.github.com>
+Date:   Wed Apr 30 17:01:16 2025 +0800
+
+    Complete and Runnable Backend
+    
+    Clean nani na backend gipa run nanako then connected nasad sa Database
+
+[33mcommit 2285a1ecb212bc90425f15c7d3a316e7080cbc15[m
+Author: nottricko <pepitopatrick01@gmail.com>
+Date:   Wed Apr 30 16:01:24 2025 +0800
+
+    Add initial Spring Boot backend project
+
+[33mcommit 01ab69d59ba82fcbb6e8f68f22996812d8482179[m
+Author: nottricko <pepitopatrick01@gmail.com>
+Date:   Wed Apr 30 15:45:26 2025 +0800
+
+    Initial commit
