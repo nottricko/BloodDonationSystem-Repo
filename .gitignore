@@ -1,50 +1,8 @@
-
 # ----------------------------
-# Compiled class files
+# Node / React build and dependencies
 # ----------------------------
-*.class
-
-# ----------------------------
-# Log files
-# ----------------------------
-*.log
-
-# ----------------------------
-# BlueJ files
-# ----------------------------
-*.ctxt
-
-# ----------------------------
-# Mobile Tools for Java (J2ME)
-# ----------------------------
-.mtj.tmp/
-
-# ----------------------------
-# Package files
-# ----------------------------
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# ----------------------------
-# JVM crash logs
-# ----------------------------
-hs_err_pid*
-replay_pid*
-
-# ----------------------------
-# Spring Boot build directories
-# ----------------------------
-target/
-out/
-
-# ----------------------------
-# Node / React build + cache
-# ----------------------------
+node_modules/
+**/node_modules/
 dist/
 build/
 .vite/
@@ -53,14 +11,22 @@ build/
 coverage/
 
 # ----------------------------
+# Java build outputs
+# ----------------------------
+target/
+out/
+
+# ----------------------------
 # Environment config files
 # ----------------------------
 .env
-.env.*.local
+.env.*
+!.env.example
 
 # ----------------------------
-# Logs
+# Log files
 # ----------------------------
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -73,7 +39,7 @@ Thumbs.db
 desktop.ini
 
 # ----------------------------
-# IDE files (VSCode, JetBrains, etc.)
+# IDE and editor settings
 # ----------------------------
 .idea/
 .vscode/
@@ -91,3 +57,22 @@ desktop.ini
 *.patch
 *.merge_backup
 *.bak
+
+# ----------------------------
+# Package lock files (optional)
+# ----------------------------
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+/frontend/blood-donation-frontend/blood-donation-frontend/node_modules
+*.js
+/frontend/blood-donation-frontend/blood-donation-frontend/node_modules/@mui
+/frontend/blood-donation-frontend/blood-donation-frontend/node_modules
+/frontend/blood-donation-frontend/blood-donation-frontend/node_modules/@mui/icons-material
+/frontend/blood-donation-frontend/blood-donation-frontend/node_modules/@mui/icons-material
+frontend/blood-donation-frontend/blood-donation-frontend/node_modules/@mui/icons-material/PostAddOutlined.js
+/frontend/blood-donation-frontend/blood-donation-frontend/node_modules
+/frontend/blood-donation-frontend/blood-donation-frontend/node_modules/@mui
+/frontend/blood-donation-frontend/blood-donation-frontend/node_modules/@mui/icons-material
+frontend/blood-donation-frontend/blood-donation-frontend/node_modules/@mui/icons-material/PortraitSharp.js
+*.js
