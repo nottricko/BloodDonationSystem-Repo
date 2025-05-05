@@ -1,0 +1,92 @@
+/* General Styling */
+body {
+  background-color: #f9f9f9; /* Light gray background */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Styling */
+.user-profile-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff; /* White background */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Title Styling */
+.user-profile-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Avatar Styling */
+.user-avatar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.user-avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Form Layout */
+.user-profile-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Full-Width Fields */
+.user-profile-form .full-width {
+  grid-column: span 2;
+}
+
+/* Button Styling */
+.user-profile-button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #6c63ff; /* Purple button */
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+
+.user-profile-button:hover {
+  background-color: #5a54d6; /* Darker purple on hover */
+}
+
+.user-profile-button:disabled {
+  background-color: #cccccc; /* Disabled button color */
+  cursor: not-allowed;
+}
+
+/* Password Section */
+.password-section {
+  margin-top: 30px;
+}
+
+.password-section-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .user-profile-form {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+}
