@@ -18,6 +18,7 @@ const Header = () => {
       <NavLink to="/request" className="blood-donation-header-nav" activeclassname="active">REQUEST BLOOD</NavLink>
       <NavLink to="/donate" className="blood-donation-header-nav" activeclassname="active">DONATE BLOOD</NavLink>
       <NavLink to="/about" className="blood-donation-header-nav" activeclassname="active">ABOUT US</NavLink>
+      <NavLink to="/book-appointment" className="blood-donation-header-nav" activeclassname="active">BOOK APPOINTMENT</NavLink>
       <NavLink to="/login" className="login-button" activeclassname="active">LOGIN</NavLink>
     </nav>
     </header>
