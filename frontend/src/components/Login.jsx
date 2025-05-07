@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import heartBag from "../pictures/blood-donation-heartbag.png";
 import "../styles/Login.css";
@@ -7,6 +7,7 @@ import { TextField, Button, Typography, Box, Modal, Box as ModalBox } from "@mui
 import axios from "axios";
 
 const Login = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -20,6 +21,7 @@ const Login = () => {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
     setErrors({ ...errors, [e.target.name]: "" }); // Clear error when user types
+    
   };
 
   const handleLogin = async (e) => {
@@ -44,13 +46,18 @@ const Login = () => {
         email: formData.email,
         password: formData.password,
       };
-
+    
       const response = await axios.post(
         "http://localhost:8080/api/users/login/manual",
         loginPayload
       );
-      alert("Login successful!");
-      setOpenModal(true);
+      
+      console.log("Server response:", response.data); // 👈 This will show in browser dev tools
+      alert(response.data); // 👈 This shows the "Login successful for user: ..." text
+      
+      localStorage.setItem("auth", "true");
+      navigate("/");
+      
     } catch (error) {
       console.error("Login error:", error);
       alert("Login failed. Please check your credentials.");

@@ -18,7 +18,15 @@ const Header = () => {
       <NavLink to="/request" className="blood-donation-header-nav" activeclassname="active">REQUEST BLOOD</NavLink>
       <NavLink to="/donate" className="blood-donation-header-nav" activeclassname="active">DONATE BLOOD</NavLink>
       <NavLink to="/about" className="blood-donation-header-nav" activeclassname="active">ABOUT US</NavLink>
-      <NavLink to="/login" className="login-button" activeclassname="active">LOGIN</NavLink>
+      <button
+          className="login-button"
+          onClick={() => {
+            localStorage.removeItem("auth");
+            window.location.href = "/login";
+          }}
+        >
+  Logout
+</button>
     </nav>
     </header>
   );

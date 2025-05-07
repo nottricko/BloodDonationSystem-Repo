@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { Link, useNavigate} from "react-router-dom"; // Import Link from react-router-dom
 import "../styles/Register.css";
+import axios from "axios";  
 
 const SignupForm = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -16,9 +18,19 @@ const SignupForm = () => {
     setFormData({ ...formData, [field]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
+  
+    try {
+      const response = await axios.post("http://localhost:8080/api/users/register", formData);
+      alert("Registration successful!");
+  
+      // Optional: redirect to login or auto-login
+      navigate("/login"); // if you use useNavigate
+    } catch (error) {
+      console.error("Registration error:", error);
+      alert("Registration failed. Please check the console for details.");
+    }
   };
 
   return (
